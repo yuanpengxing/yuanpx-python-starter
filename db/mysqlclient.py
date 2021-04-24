@@ -22,8 +22,6 @@ class MysqlClient:
             sql = 'INSERT INTO employees (name, hire_date, gender, birth_date) VALUES (%s, %s, %s, %s)' ，对应的tuple
             tuple = ('Robin', 'Zhyea', tomorrow, 'M', date(1989, 6, 14))
 
-            sql = 'SELECT first_name, last_name, hire_date FROM employees WHERE hire_date BETWEEN %s AND %s'，对应的tuple
-            tuple = (hire_start, hire_end)
         :param tuple: tuple的大小和顺序，严格按照占位符来确定
         :return:
         """
